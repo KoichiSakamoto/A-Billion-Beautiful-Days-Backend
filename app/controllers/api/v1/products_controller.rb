@@ -22,7 +22,7 @@ class Api::V1::ProductsController < ApplicationController
   private
 
   def product_params
-    params.permit(:name, :product_id, :price, :category_id)
+    params.permit(:name, :product_id, :price, :category_id, :about, :thumbnail_url)
   end
 
   def find_product
