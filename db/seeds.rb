@@ -73,13 +73,3 @@ cart2 = Cart.create(user_id: 2)
 cart3 = Cart.create(user_id: 3)
 cart4 = Cart.create(user_id: 4)
 cart5 = Cart.create(user_id: 5)
-
-
-cartprod1 = CartProduct.create(cart_id: 1, product_id: 1)
-cartprod2 = CartProduct.create(cart_id: 2, product_id: 2)
-cartprod3 = CartProduct.create(cart_id: 4, product_id: 12)
-cartprod4 = CartProduct.create(cart_id: 5, product_id: 8)
-cartprod5 = CartProduct.create(cart_id: 2, product_id: 4)
-cartprod6 = CartProduct.create(cart_id: 4, product_id: 5)
-cartprod7 = CartProduct.create(cart_id: 3, product_id: 6)
-cartprod8 = CartProduct.create(cart_id: 3, product_id: 3)
