@@ -26,7 +26,7 @@ class Api::V1::CartProductsController < ApplicationController
   private
 
   def cart_product_params
-    params.permit(:product_id, :cart_id, :cart_product_id)
+    params.permit(:product_id, :cart_id, :cart_product_id, :size)
   end
 
   def find_cart_product
