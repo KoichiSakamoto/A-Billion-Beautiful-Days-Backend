@@ -21,6 +21,9 @@ class Api::V1::ProductImagesController < ApplicationController
 
   private
 
+  #params method to prevent weird injections from frontend. Only allow parameters
+  #required for model initialization.
+
   def product_image_params
     params.permit(:storage_url, :product_image_id, :product_id)
   end

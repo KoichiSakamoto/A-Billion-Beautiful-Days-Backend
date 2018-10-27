@@ -21,6 +21,9 @@ class Api::V1::CategoriesController < ApplicationController
 
   private
 
+  #params method to prevent weird injections from frontend. Only allow parameters
+  #required for model initialization.
+
   def category_params
     params.permit(:name, :category_id)
   end

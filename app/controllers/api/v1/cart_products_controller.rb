@@ -25,6 +25,9 @@ class Api::V1::CartProductsController < ApplicationController
 
   private
 
+  #params method to prevent weird injections from frontend. Only allow parameters
+  #required for model initialization.
+
   def cart_product_params
     params.permit(:product_id, :cart_id, :cart_product_id, :size)
   end
